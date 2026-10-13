@@ -1,0 +1,59 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login | Smart Campus</title>
+  <link rel="stylesheet" href="student-login.css">
+</head>
+<body>
+  <main class="login-card">
+    <a href="index.html" class="back">← Home</a>
+
+    <div class="logo">🎓</div>
+    <h1>Student Login</h1>
+    <p class="subtitle">Welcome back! Sign in to your student account.</p>
+
+    <form id="studentLoginForm">
+      <label for="email">Student Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your registered email"
+        autocomplete="email"
+        required
+      >
+
+      <label for="password">Password</label>
+      <div class="password-field">
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your password"
+          autocomplete="current-password"
+          required
+        >
+        <button type="button" id="togglePassword">Show</button>
+      </div>
+
+      <button type="submit" id="loginButton" class="submit-btn">
+        Sign In →
+      </button>
+
+      <p id="message" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="forgot">
+      <a href="#" id="forgotPassword">Forgot password?</a>
+    </p>
+
+    <p class="signup">
+      Don't have an account?
+      <a href="signup.html">Create account</a>
+    </p>
+  </main>
+
+  <script type="module" src="student-login.js"></script>
+</body>
+</html>
